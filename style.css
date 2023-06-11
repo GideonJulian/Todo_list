@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Outfit", sans-serif;
+  }
+  html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .container {
+    width: 40%;
+    height: 650px auto;
+    margin: 50px auto;
+    border: 2px solid rgb(17, 138, 170);
+  
+    flex: wrap;
+  }
+  
+  .header {
+    background-color: rgb(17, 138, 170);
+    width: 100%;
+    height: 160px;
+    position: relative;
+  }
+  
+  .header h1 {
+    color: white;
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  
+  #search::placeholder {
+    color: white;
+    padding-left: 5px;
+  }
+  
+  .task-area {
+    border: 1px solid #118aaa;
+    width: 85%;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    outline: none;
+  }
+  
+  .task-area ul {
+    margin: 30px;
+  }
+  
+  .task-area ul h2 {
+    text-align: center;
+    /* display:none; */
+    color: rgb(17, 138, 170);
+  }
+  
+  .task-area ul .items {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid;
+    font-size: 1.3rem;
+    font-weight: 100;
+    list-style-type: none;
+  }
+  
+  .task-area ul .items .removeBtn {
+    color: rgb(17, 138, 170);
+    font-size: 2rem;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+  
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+  }
+  
+  .task-area ul .items .removeBtn:hover {
+    transform: rotate(130deg);
+  }
+  
+  .inputArea {
+    margin-top: 40px;
+  }
+  
+  #addList {
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(17, 138, 170);
+    margin: 7px;
+  }
+  
+  #addBtn {
+    padding: 10px;
+    background-color: rgb(17, 138, 170);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    visibility: hidden;
+  }
+  
+  #addBtn:active {
+  background-color: white;
+  color: black;
+  }
+  
+  #addBtn i {
+    color: white;
+  }
+  
+  .fa {
+   color: white;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    float: right;
+    width: fit-content;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+  
+  .search i {
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  .circle {
+    background-color: #2B124C;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    margin-bottom: 10px;
+  
+    left: 0;
+  }
+  #search {
+    width: 150px;
+    height: 40px;
+    padding: 0px 10px;
+    outline: none;
+    border-radius: 5px;
+    float: right;
+    font-size: 15px;
+    color: white;
+    /* margin-right: 30px; */
+    /* margin-bottom: 30px; */
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  #search:focus {
+    width: 250px;
+  }
+  
+  #msg {
+    font-size: 25px;
+  }
+  #msg span {
+    padding-left: 30px;
+  }
+  
+  /* MEDIA QUARIES */
+  @media screen and (max-width: 800px) {
+    body {
+      background-color: white;
+    }
+    .header h1 {
+      padding-bottom: 10px;
+      padding-left: 0;
+    }
+  
+    .header {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+    }
+  
+    #search {
+      height: 35px;
+    }
+  
+    #addList {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-self: center;
+    }
+  
+    #addBtn {
+      margin: 7px;
+    }
+  
+    .task-area ul .items {
+      font-size: 15px;
+      padding: 10px;
+      line-height: 5px;
+    }
+  
+    .task-area ul .items .removeBtn {
+      font-size: 20px;
+      margin: -10px;
+    }
+  
+    .search i {
+      font-size: 20px;
+      padding: 8px;
+    }
+  }
+  @media (max-width: 720px) {
+    .container {
+      margin: 0 !important;
+      width: 100% !important;
+    }
+  }
+  
