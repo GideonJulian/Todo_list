@@ -13,8 +13,7 @@ var count = 0
 // Adding item function
 AddBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  count+=1
-  Added.textContent = count;
+
 
   console.log(count)
   // Creating new li
