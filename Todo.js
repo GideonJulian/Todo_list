@@ -33,7 +33,7 @@ AddBtn.addEventListener("click", (e) => {
   // Adding class list
 
   remove.className = "removeBtn";
-removeBtnTextNode = document.createTextNode("")
+removeBtnTextNode = document.createTextNode("x")
 removeBtnTextNode.className = 'fa fa-times'
 
   remove.appendChild(removeBtnTextNode);
